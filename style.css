@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: #22242a;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  /* background: url("040.jpg") no-repeat; */
+  background-size: cover;
+  background-position: cover;
+  z-index: 10;
+}
+.topbar {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 6rem;
+  position: sticky;
+}
+.logo {
+  display: flex;
+  width: 5rem;
+}
+.logo img {
+  width: 5rem;
+  border: 0.1rem solid #19b3d3;
+  border-radius: 50%;
+  margin: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  margin-left: 6rem;
+}
+.title {
+  margin-left: -6rem;
+}
+.brown {
+  display: flex;
+  margin-left: 42%;
+  /* justify-content: center;
+  align-items: center; */
+  font-size: 2.5rem;
+  margin-top: -4.5rem;
+  color: #fff;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+.boys {
+  display: flex;
+  margin: auto;
+  margin-left: 12rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  margin-top: -3.8rem;
+  color: #19b3d3;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.toggle i {
+  display: flex;
+  float: right;
+  margin-right: 4rem;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  margin-top: -3rem;
+}
+.toggle i:hover {
+  color: #19b3d3;
+}
+
+.sidebar {
+  height: 100vh;
+  width: 0rem;
+  margin-top: -0.3rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 0.5rem;
+  transition: 0.2s;
+  background-color: #2e3138;
+  overflow: hidden;
+  z-index: 1;
+  display: inline-block;
+  z-index: 1;
+}
+
+.sidebar.active {
+  width: 30rem;
+  border-right: 0.2rem solid rgb(165, 159, 159);
+  border-top: 0.2rem solid #22242a;
+  overflow: hidden;
+  z-index: 1;
+}
+.sidebar ul {
+  padding-top: 9rem;
+}
+.sidebar ul li {
+  margin-bottom: 2.5rem;
+}
+.sidebar ul li:hover {
+  background-color: #19b3d3;
+}
+.sidebar a {
+  color: #fff;
+  display: block;
+  width: 100%;
+  line-height: 6rem;
+  text-decoration: none;
+  padding-left: 8.5rem;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+  box-sizing: border-box;
+  transition: 0.5s;
+  font-size: 2.2rem;
+  z-index: 1;
+
+  overflow-x: hidden;
+}
+
+.video1 {
+  display: flex;
+  position: absolute;
+  left: 30%;
+  top: 25%;
+  transform: translateX(-50%, 50%);
+}
+.mon-ti {
+  color: #fff;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.video1 video {
+  width: 50%;
+  display: flex;
+  border-radius: 1rem;
+}
+.montage-title-1 {
+  color: #19b3d3;
+  display: flex;
+  font-size: 3rem;
+  position: absolute;
+  letter-spacing: 0.4rem;
+  left: 42rem;
+  top: 10rem;
+}
+.main {
+  position: absolute;
+  height: 63rem;
+  width: 100%;
+  /* display: inline-block; */
+  margin-top: -65rem;
+  z-index: -1;
+}
+.heading {
+  text-align: center;
+  font-size: 4rem;
+  text-transform: capitalize;
+  /* font-weight: bold; */
+  padding-top: 5rem;
+  flex-wrap: wrap;
+  color: #fff;
+  padding-bottom: 5rem;
+  z-index: -1;
+}
+.owner-name,
+.owners {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 6rem;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  font-weight: bold;
+  z-index: -1;
+  margin-left: -2rem;
+  flex-wrap: wrap;
+  color: #fff;
+}
+.owners h3 {
+  color: #19b3d3;
+  font-size: 4rem;
+  z-index: -1;
+}
+.ff,
+.ex {
+  color: #19b3d3;
+}
+.heading .welcome {
+  position: relative;
+  color: #22242a;
+  flex-wrap: wrap;
+  font-size: 6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8rem;
+  z-index: -1;
+  animation: welcome 1s linear infinite;
+  -webkit-text-stroke: 0.07vw rgb(167, 167, 167);
+}
+.welcome::before {
+  content: attr(data-text);
+  position: absolute;
+  top: -0.26rem;
+  left: 0;
+  font-size: 6rem;
+  letter-spacing: 0.8rem;
+  width: 0;
+  height: 100%;
+  color: #19b3d3;
+  -webkit-text-stroke: 0rem rgb(167, 167, 167);
+  overflow: hidden;
+  border-right: 2px solid #19b3d3;
+  animation: welcome 4s linear infinite;
+}
+
+@keyframes welcome {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  70%,
+  100% {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  html {
+    font-size: 55%;
+  }
+  .logo img {
+    width: 4.5rem;
+    margin-top: 1.3rem;
+    margin-left: 2rem;
+  }
+  .sidebar.active {
+    width: 25rem;
+  }
+  .topbar {
+    height: 7rem;
+  }
+  .sidebar a {
+    padding-left: 4rem;
+  }
+  .title {
+    margin-left: -13rem;
+  }
+  .boys {
+    margin-left: 24rem;
+  }
+
+  .sidebar {
+    height: 90vh;
+    margin-top: 0.5rem;
+  }
+}

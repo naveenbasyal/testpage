@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="topbar">
+        <div class="logo">
+          <img src="logo1.jpg" alt="logo" />
+        </div>
+        <div class="title">
+          <span class="brown">Brown</span> <span class="boys">Boyz</span>
+        </div>
+        <div class="toggle" onclick="togglemenu()">
+          <i class="fa fa-bars"></i>
+        </div>
+      </div>
+      <div class="main">
+        <!-- <div class="welcome">Welcome To Our  <span class="ff"> Free Fire</span> Page</div> -->
+      </div>
+
+      <div class="sidebar">
+        <div class="navlist">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="guild.html">Guild</a></li>
+            <li><a href="squad.html">Squad</a></li>
+            <li><a href="montages.html">Montages</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="heading">
+        <span data-text="welcome..." class="welcome">welcome...</span><br />
+        to <span class="ff">our</span> official
+        <span class="ff">free fire</span> site <span class="ex">!</span>
+      </div>
+      <div class="owners">
+        <h3>Owners</h3>
+        <div class="owner-name">
+          &bull; Naveen Basyal<br />
+          &bull; Sonu Munda<br />
+          &bull; Umesh Chimsa<br />
+        </div>
+      </div>
+    </div>
+    <script>
+      function togglemenu() {
+        let sidebar = document.querySelector(".sidebar");
+        sidebar.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
