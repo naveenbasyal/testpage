@@ -234,6 +234,10 @@ body {
   html {
     font-size: 55%;
   }
+  .heading{
+    margin-top: -16rem;
+    margin-bottom: 4rem;
+  }
   .logo img {
     width: 4.5rem;
     margin-top: 1.3rem;
@@ -244,6 +248,9 @@ body {
   }
   .topbar {
     height: 7rem;
+  }
+  .container{
+    height: 80%;
   }
   .sidebar a {
     padding-left: 4rem;
