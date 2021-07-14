@@ -14,7 +14,6 @@ body {
 .container {
   height: 100%;
   width: 100%;
-  /* background: url("040.jpg") no-repeat; */
   background-size: cover;
   background-position: cover;
   z-index: 10;
@@ -43,8 +42,6 @@ body {
 .brown {
   display: flex;
   margin-left: 42%;
-  /* justify-content: center;
-  align-items: center; */
   font-size: 2.5rem;
   margin-top: -4.5rem;
   color: #fff;
@@ -130,30 +127,30 @@ body {
   top: 25%;
   transform: translateX(-50%, 50%);
 }
-.mon-ti {
-  color: #fff;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
+
 .video1 video {
   width: 50%;
   display: flex;
   border-radius: 1rem;
 }
 .montage-title-1 {
-  color: #19b3d3;
-  display: flex;
-  font-size: 3rem;
   position: absolute;
+  color: #19b3d3;
+  font-size: 3rem;
   letter-spacing: 0.4rem;
   left: 42rem;
   top: 10rem;
+}
+.mon-tap {
+  color: #fff;
+}
+.mon-clip {
+  color: #fff;
 }
 .main {
   position: absolute;
   height: 63rem;
   width: 100%;
-  /* display: inline-block; */
   margin-top: -65rem;
   z-index: -1;
 }
@@ -161,9 +158,9 @@ body {
   text-align: center;
   font-size: 4rem;
   text-transform: capitalize;
-  /* font-weight: bold; */
   padding-top: 5rem;
   flex-wrap: wrap;
+
   color: #fff;
   padding-bottom: 5rem;
   z-index: -1;
@@ -234,11 +231,7 @@ body {
   html {
     font-size: 55%;
   }
-  .montage-title-1{
-    margin-left: -36rem;
-    font-size: 2rem;
-  }  
-  .heading{
+  .heading {
     margin-top: -16rem;
     margin-bottom: 4rem;
   }
@@ -253,8 +246,11 @@ body {
   .topbar {
     height: 7rem;
   }
-  .container{
-    height: 80%;
+  .montage-title-1 {
+    margin-left: -36rem;
+    font-size: 2rem;
+    position: absolute;
+    z-index: -1;
   }
   .sidebar a {
     padding-left: 4rem;
@@ -262,10 +258,19 @@ body {
   .title {
     margin-left: -13rem;
   }
+  .video1 video {
+    position: absolute;
+    width: 32rem;
+    z-index: -1;
+    left: -7rem;
+    top: -5rem;
+  }
   .boys {
     margin-left: 24rem;
   }
-
+  .container {
+    height: 80%;
+  }
   .sidebar {
     height: 90vh;
     margin-top: 0.5rem;
