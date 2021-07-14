@@ -266,6 +266,11 @@ body {
     left: -7rem;
     top: -5rem;
   }
+  .main-squad{
+    position: absolute;
+    height: 90vh;
+    z-index: -1;
+  }
   .boys {
     margin-left: 24rem;
   }
