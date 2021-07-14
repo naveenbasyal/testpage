@@ -271,6 +271,7 @@ body {
   }
   .oursquad{
     margin-top: -83rem;
+    z-index: -1;
   }
   .container {
     height: 80%;
