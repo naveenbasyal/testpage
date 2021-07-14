@@ -36,9 +36,7 @@ body {
   display: flex;
   margin-left: 6rem;
 }
-.title {
-  margin-left: -6rem;
-}
+
 .brown {
   display: flex;
   margin-left: 42%;
@@ -116,10 +114,11 @@ body {
   transition: 0.5s;
   font-size: 2.2rem;
   z-index: 1;
-
   overflow-x: hidden;
 }
-
+.oursquad{
+  margin-top: -65rem;
+}
 .video1 {
   display: flex;
   position: absolute;
@@ -160,7 +159,6 @@ body {
   text-transform: capitalize;
   padding-top: 5rem;
   flex-wrap: wrap;
-
   color: #fff;
   padding-bottom: 5rem;
   z-index: -1;
@@ -246,6 +244,9 @@ body {
   .topbar {
     height: 7rem;
   }
+  .squad{
+
+  }
   .montage-title-1 {
     margin-left: -36rem;
     font-size: 2rem;
@@ -267,6 +268,9 @@ body {
   }
   .boys {
     margin-left: 24rem;
+  }
+  .oursquad{
+    margin-top: -83rem;
   }
   .container {
     height: 80%;
