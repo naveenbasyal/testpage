@@ -6,10 +6,18 @@
 }
 html {
   font-size: 62.5%;
-}
-body {
   font-family: "Poppins", sans-serif;
-  background: #22242a;
+  background: #780206; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #061161,
+    #780206
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #061161,
+    #780206
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .container {
   height: 100%;
@@ -78,7 +86,18 @@ body {
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 0.5rem;
   transition: 0.2s;
-  background-color: #2e3138;
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #e74c3c,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #e74c3c,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   overflow: hidden;
   z-index: 1;
   display: inline-block;
@@ -116,7 +135,7 @@ body {
   z-index: 1;
   overflow-x: hidden;
 }
-.oursquad{
+.oursquad {
   margin-top: -65rem;
 }
 .video1 {
@@ -244,8 +263,7 @@ body {
   .topbar {
     height: 7rem;
   }
-  .squad{
-
+  .squad {
   }
   .montage-title-1 {
     margin-left: -36rem;
@@ -266,7 +284,7 @@ body {
     left: -7rem;
     top: -5rem;
   }
-  .main-squad{
+  .main-squad {
     position: absolute;
     height: 90vh;
     z-index: -1;
@@ -274,9 +292,8 @@ body {
   .boys {
     margin-left: 24rem;
   }
-  .oursquad{
+  .oursquad {
     margin-top: -83rem;
-    z-index: -1;
   }
   .container {
     height: 80%;
