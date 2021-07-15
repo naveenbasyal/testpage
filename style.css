@@ -26,6 +26,17 @@ html {
   background-position: cover;
   z-index: 10;
 }
+.sidebar a:hover{
+  background-image: linear-gradient(to right, #d8360d 0%, #85D8CE  51%, #085078  100%);
+  padding: 10px 100px;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px rgb(245, 245, 245);
+  border-radius: 4px;
+  display: block;
+}
 .topbar {
   background-color: rgba(0, 0, 0, 0.6);
   height: 6rem;
